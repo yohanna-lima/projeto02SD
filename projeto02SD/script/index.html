@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Ether</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.0/dist/web3.min.js"></script>
+    <script src="etherTransfer.js" defer></script>
+</head>
+<body>
+    <h2>Enviar Ether</h2>
+    <form id="formEnviarEther">
+        <label for="senderAddress">Endereço do Remetente:</label>
+        <input type="text" id="senderAddress" name="senderAddress" required><br><br>
+
+        <label for="privateKey">Chave Privada do Remetente:</label>
+        <input type="password" id="privateKey" name="privateKey" required><br><br>
+
+        <label for="recipientAddress">Endereço do Destinatário:</label>
+        <input type="text" id="recipientAddress" name="recipientAddress" required><br><br>
+
+        <label for="amount">Quantidade de Ether:</label>
+        <input type="number" id="amount" name="amount" step="0.001" min="0" required><br><br>
+
+        
+        <label for="nomeEstudante">Nome do Estudante:</label>
+        <input type="text" id="nomeEstudante" name="nomeEstudante" required><br><br>
+
+        <label for="idade">Idade do Estudante:</label>
+        <input type="number" id="idade" name="idade" min="1" required><br><br>
+
+        <label for="preRequisito">Possui Pré-requisito:</label>
+        <select id="preRequisito" name="preRequisito" required>
+            <option value="true">Sim</option>
+            <option value="false">Não</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar Ether">
+    </form>
+
+    <div id="resultado"></div>
+</body>
+</html>
