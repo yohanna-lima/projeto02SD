@@ -1,1 +1,3 @@
-Projeto da unidade 02 - Sistemas Distribuídos
+# Sistemas Distribuídos (Sistemas de informação - Unifacisa)
+
+Projeto da unidade 02
